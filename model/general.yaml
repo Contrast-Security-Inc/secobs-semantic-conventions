@@ -52,3 +52,27 @@ groups:
       - ref: code.column
       - ref: code.stacktrace
         requirement_level: opt_in
+  - id: contrast.propagation
+    type: span
+    brief: >
+      Contrast-specific attributes for trace context propagation.
+    attributes:
+      - id: contrastPropagatedContext
+        type: boolean
+        stability: experimental
+        brief: >
+          Indicates if a trace has had context propagation provided. This attribute
+          exists on root spans to identify traces with propagated context.
+        examples: [true, false]
+  - id: contrast.protect
+    type: span
+    brief: >
+      Contrast Protect specific attributes for security event detection.
+    attributes:
+      - id: event
+        type: boolean
+        stability: experimental
+        brief: >
+          Indicates if the Contrast Protect agent has detected an attack event
+          on the current resource or span.
+        examples: [true, false]
