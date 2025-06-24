@@ -7,7 +7,7 @@
 ### Features
 
 - Add new Contrast-specific boolean attributes:
-  - `contrastPropagatedContext`: Indicates if a trace has context propagation on root spans
+  - `contrast.propagated.context`: Indicates if a trace has context propagation on root spans
   - `contrast.protect.event`: Indicates if Contrast Protect detected an attack event
 
 ### Fixes

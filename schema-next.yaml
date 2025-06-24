@@ -7,7 +7,7 @@ versions:
         - rename_attributes:
             attribute_map:
               # Add new Contrast-specific attributes
-              contrastPropagatedContext: contrastPropagatedContext
+              contrast.propagated.context: contrast.propagated.context
               contrast.protect.event: contrast.protect.event
   0.4.0:
   0.3.0:

@@ -52,12 +52,12 @@ groups:
       - ref: code.column
       - ref: code.stacktrace
         requirement_level: opt_in
-  - id: contrast.propagation
+  - id: contrast
     type: span
     brief: >
-      Contrast-specific attributes for trace context propagation.
+      Contrast-specific attributes for observability and security monitoring.
     attributes:
-      - id: contrastPropagatedContext
+      - id: propagated.context
         type: boolean
         stability: experimental
         brief: >
