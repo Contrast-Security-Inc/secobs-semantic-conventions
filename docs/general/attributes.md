@@ -24,6 +24,7 @@ Particular operations may refer to or require some of these attributes.
         * [Client/server example with forward proxy](#clientserver-example-with-forward-proxy)
 - [General remote service attributes](#general-remote-service-attributes)
 - [Source Code Attributes](#source-code-attributes)
+- [Contrast-Specific Attributes](#contrast-specific-attributes)
 
 <!-- tocstop -->
 
@@ -251,4 +252,20 @@ about the span.
 | `code.lineno` | int | The line number in `code.filepath` best representing the operation. It SHOULD point within the code unit named in `code.function`. | `42` | Recommended |
 | `code.namespace` | string | The "namespace" within which `code.function` is defined. Usually the qualified class or module name, such that `code.namespace` + some separator + `code.function` form a unique identifier for the code unit. | `com.example.MyHttpService` | Recommended |
 | `code.stacktrace` | string | A stacktrace as a string in the natural representation for the language runtime. The representation is to be determined and documented by each language SIG. | `at com.example.GenerateTrace.methodB(GenerateTrace.java:13)\n at com.example.GenerateTrace.methodA(GenerateTrace.java:9)\n at com.example.GenerateTrace.main(GenerateTrace.java:5)` | Opt-In |
+<!-- endsemconv -->
+
+## Contrast-Specific Attributes
+
+The following attributes are specific to Contrast Security's observability and security monitoring capabilities.
+
+<!-- semconv contrast -->
+| Attribute  | Type | Description  | Examples  | Requirement Level |
+|---|---|---|---|---|
+| `propagated.context` | boolean | Indicates if a trace has had context propagation provided. This attribute exists on root spans to identify traces with propagated context. | `True`; `False` | Recommended |
+<!-- endsemconv -->
+
+<!-- semconv contrast.protect -->
+| Attribute  | Type | Description  | Examples  | Requirement Level |
+|---|---|---|---|---|
+| `event` | boolean | Indicates if the Contrast Protect agent has detected an attack event on the current resource or span. | `True`; `False` | Recommended |
 <!-- endsemconv -->

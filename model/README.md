@@ -39,5 +39,5 @@ language projects.
 
 See also:
 
-- [Markdown Tables](https://github.com/open-telemetry/build-tools/tree/main/semantic-conventions#markdown-tables)
-- [Code Generator](https://github.com/open-telemetry/build-tools/tree/main/semantic-conventions#code-generator)
+- [Markdown Tables](https://github.com/open-telemetry/build-tools/tree/e8bd6f8d1f88ab594b8cfb15658c7cc4932b1b35/semantic-conventions#markdown-tables)
+- [Code Generator](https://github.com/open-telemetry/build-tools/tree/e8bd6f8d1f88ab594b8cfb15658c7cc4932b1b35/semantic-conventions#code-generator)
