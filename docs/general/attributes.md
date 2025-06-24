@@ -261,11 +261,11 @@ The following attributes are specific to Contrast Security's observability and s
 <!-- semconv contrast -->
 | Attribute  | Type | Description  | Examples  | Requirement Level |
 |---|---|---|---|---|
-| `contrast.propagated.context` | boolean | Indicates if a trace has had context propagation provided. This attribute exists on root spans to identify traces with propagated context. | `true`; `false` | Experimental |
+| `propagated.context` | boolean | Indicates if a trace has had context propagation provided. This attribute exists on root spans to identify traces with propagated context. | `True`; `False` | Recommended |
 <!-- endsemconv -->
 
 <!-- semconv contrast.protect -->
 | Attribute  | Type | Description  | Examples  | Requirement Level |
 |---|---|---|---|---|
-| `contrast.protect.event` | boolean | Indicates if the Contrast Protect agent has detected an attack event on the current resource or span. | `true`; `false` | Experimental |
+| `event` | boolean | Indicates if the Contrast Protect agent has detected an attack event on the current resource or span. | `True`; `False` | Recommended |
 <!-- endsemconv -->

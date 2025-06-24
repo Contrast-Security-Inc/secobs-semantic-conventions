@@ -59,7 +59,7 @@ groups:
     attributes:
       - id: propagated.context
         type: boolean
-        stability: experimental
+        requirement_level: recommended
         brief: >
           Indicates if a trace has had context propagation provided. This attribute
           exists on root spans to identify traces with propagated context.
@@ -71,7 +71,7 @@ groups:
     attributes:
       - id: event
         type: boolean
-        stability: experimental
+        requirement_level: recommended
         brief: >
           Indicates if the Contrast Protect agent has detected an attack event
           on the current resource or span.
