@@ -65,10 +65,10 @@ groups:
           Indicates if a trace has had context propagation provided. This attribute
           exists on root spans to identify traces with propagated context.
         examples: [true, false]
-      - id: protect.event
+      - id: attack.event
         type: boolean
         requirement_level: recommended
         brief: >
-          Indicates if the Contrast Protect agent has detected an attack event
+          Indicates if the Contrast agent has detected an attack event
           on the current resource or span.
         examples: [true, false]
